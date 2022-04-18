@@ -1,34 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
     max-width: 1024px;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     margin: 0 auto;
 }
 
 h1 {
-    width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 0;
+    text-align: center;
+    padding: 20px 0 0; /* not margin, but padding */
 }
 
 .content {
-    margin: auto;
-    width: 90%;
-    border: 1px solid grey;
-    padding: 20px;
-}
-
-.form {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    width: 90%;
 }
 
 table {
     border-collapse: collapse;
-    margin: 30px auto 0;
-    width: 90%;
+    margin: 20px auto 0; /* not padding, but margin */
+    width: 100%;
+    padding-top: 20px; /* no effect -- due to border-collapse? */
 }
 
 td, th {
@@ -36,6 +26,23 @@ td, th {
     padding: 10px;
 }
 
+.form {
+    margin: 20px auto 0;
+    width: 100%;
+    box-sizing: border-box; /* */
+    display: inline-block; /* */
+}
+
 .input {
-    width: 70%;
+    width: 90%;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 10%;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
 }
